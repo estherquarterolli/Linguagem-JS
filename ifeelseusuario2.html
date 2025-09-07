@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo ou Brasileiro?</title>
+</head>
+<body>
+    <h1> Teste de nacionalidade!</h1>
+
+    <input type="text" id="txtpais">
+    <input type="button" value="enviar" onclick="nacionalidade()">
+    <div id="resultado"></div>
+
+    <script>
+        function nacionalidade() {
+            var txtpais = document.getElementById('txtpais');
+            var result = document.getElementById('resultado');
+            var pais = txtpais.value.trim(); // remove espaços
+
+            result.innerHTML = `<p>Seu país é: ${pais}</p>`;
+
+            if (pais.toLowerCase() === "brasil") {
+                result.innerHTML += `<p>Brasileiro(a)</p>`;
+            } else {
+                result.innerHTML += `<p>Gringo(a)</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

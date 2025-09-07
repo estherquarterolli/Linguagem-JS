@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário somando valores:</title>
+    <style>
+        body{
+            background-color: rgb(77, 4, 77);
+            color:white;
+        }
+        .soma{
+           
+            background-color: purple;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+        }
+        input{
+            background-color: rgb(253, 188, 255);
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            border: none;
+            font: normal 18pt Arial;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #btn{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores:</h1>
+    <div class="soma">
+        <div class="num"></div>
+    <input type="number" name="txtn1" id="txtn1">
+    +
+    <input type="number" name="txtn2" id="txtn2" \n>
+    
+    <input id="btn" type="button" value="somar" onclick="somar()">
+<div >
+    <label>Resultado:</label>
+    <input id="result" disabled>
+    </div>
+</div>
+<script>
+    
+    function somar(){
+    var tn1=document.getElementById('txtn1');
+    var tn2=document.getElementById('txtn2');
+    var n1= Number(tn1.value);
+    var n2= Number(tn2.value);
+    var soma= n1+n2;
+        document.getElementById('result').value = soma;
+    }
+</script>
+
+</body>
+</html>

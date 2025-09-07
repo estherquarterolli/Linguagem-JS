@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(22, 123, 218);
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos DOM </h1>
+    <p> Aqui vai o resultado:</p>
+    <!-- Dom é um acrônimo para Document Object Model, conjunto de objetos 
+    dentro do navegador que vai dar acesso aos componentes do site -->
+
+    <!-- Arvore DOM do nosso atual site : window-> location-document-history(entre outros),
+    document-> html -> head, body, head -> meta, title; body-> h1, p, p, div; p-> strong -->
+  
+    <p>Arendendo a usar o <strong>DOM</strong> em JAVASCRIPT</p>
+    <div id="btn-clique"> Clique em mim</div>
+
+    <script>
+        // window.document.write('Olá Mundo ');
+        // window.document.write(window.document.charset);
+        // charset usado no head;
+
+        var p1= window.document.getElementsByTagName('p')[1];
+        //esse [0] serve para selecionar o paragrafo
+        p1.style.color='yellow';
+        window.document.write(p1.innerText);
+
+        var corpo=window.document.body;
+        corpo.style.background='purple';
+
+        // var btn = window.document.getElementById('btn-clique');
+        // btn.style.background='green';
+        // btn.style.padding='20px';
+        // d.innerText='Estou aguardando';
+
+        var btn= window.document.querySelector('div#btn-clique');
+        btn.style.color='yellow';
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo variaveis</title>
+</head>
+<body>
+    <h1> Aprendendo sobre variávies em Js:</h1>
+    <P> Espaços demilitados de memória!</P>
+ <script>
+    //comentário curto
+    /*Comentario longo*/
+
+   var nome = window.prompt('Qual o seu nome?');
+   var num1 = Number.parseInt(window.prompt('Informe o primeiro valor:'));
+   var num2 = Number.parseInt(window.prompt('Informe o segundo valor:'));
+   //se eu por numberparseint ou numberparsefloat, será somente os tipos especificos 
+   // de cada. Agora se usar somente o number, serve para todos!
+   var soma= num1 + num2;
+    //+ para adição e concatenação(Para isso não acontecer, precisa ser um number e não string)
+   var mult= num1*num2;
+   var div= num1/num2;
+   var rest=num1%num2;
+   var sub= num1-num2;
+   //potência: **(Esse é o símbolo)
+
+//    window.alert(nome+ ", a soma de "+ num1 + "+" + num2 + "é:"+ soma); (Essa é outra forma de imprimir concatenando)
+   window.alert(`Sr(a) ${nome}, a soma de ${num1} e ${num2} é : ${soma}`);
+   window.alert(`A multiplicação de ${num1} e ${num2} é : ${mult}`);
+   window.alert(`A subtração de ${num1} e ${num2} é : ${sub}`);
+   window.alert(`A divisão de ${num1} e ${num2} é : ${div}`);
+   window.alert(`O resto da divisão de ${num1} e ${num2} é : ${rest}`);
+  
+
+  
+ </script>
+    
+</body>
+</html>
